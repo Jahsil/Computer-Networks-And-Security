@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>OTP, 3DES, AES Implementation</title>
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="encloser">
+            <h1>OTP, 3DES, AES Encryption and Decryption</h1>
+        </div>
+
+        <form id="myForm">
+            <div class="encloser">
+                <label for="text">Enter any text to encrypt</label>
+                <textarea name="text" id="text" cols="35" rows="6"></textarea>
+                <br>
+                
+            </div>
+            <br>
+            <div class="encloser">
+                <label for="key">Encrption/Decryption Key</label>
+                <input type="text" name="key" id="key" placeholder="Enter phrase">
+                <br>
+                <select name="crypto" id="change">
+                    <option value="Encrypt">Encrypt</option>
+                    <option value="Decrypt">Decrypt</option>
+                </select>
+            </div>
+            <br>
+
+            <div class="encloser">
+                <label >Please choose an Algorithm</label>
+                <select name="algorithm" id="algorithm">
+                    <option value="DES">DES</option>
+                    <option value="3_DES">Triple DES</option>
+                    <option value="AES">AES</option>
+                    <option value="OTP">OTP</option>
+                </select>
+            </div>
+
+            <button class="submit_button" type="submit" id="submit">Encrypt</button>
+            
+        </form>
+
+        <div class="encloser">
+            <div class="result">
+                <p id="resPara">This is the output</p>
+            </div>
+            <button class="copy_button" id="copy" disabled>Copy</button>
+            <p id="warning"></p>
+        </div>
+
+    </div>
+
+   
+    <script src="./onetimepad.js"></script>
+    <script src="./crypto-js.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

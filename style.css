@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+html {
+    background-color: #000000;
+    background-image: url('matrix.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(126, 239, 179);
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 0.1rem;
+}
+
+.encloser {
+    width: 70%;
+    margin: 0 auto;    
+}
+.result {  
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    padding: 5px;
+    align-items: center;
+    color: rgb(147, 22, 22);
+}
+#resPara {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    overflow:scroll;
+}
+
+.submit_button {
+    width: 70%;
+    height: 25pt;
+    margin: 5px auto;
+    border: 1px solid rgb(233, 91, 69);
+    border-radius: 0.7rem;
+    background-color: rgb(235, 97, 66);
+    transition: 0.3s;
+}
+
+.submit_button:hover {
+    background-color: rgb(92, 254, 154);
+    width: 95%;
+    transition: 0.3s;
+}
+
+.copy_button {
+    display: inline;
+    width: auto;
+    height: 20pt;
+    margin: 5px auto;
+    border: 1px solid rgb(233, 91, 69);
+    border-radius: 0.3rem;
+    background-color: rgb(235, 97, 66);
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    transition: 0.3s;
+}
+
+.copy_button:hover {
+    border: 0;
+    background-color: rgb(92, 254, 154);
+    box-shadow: 1px 2px 3px rgb(121, 231, 209);
+    transition: 0.3s;
+}
+
+.copy_button:active {
+    color: black;
+}
+
+.copy_button:disabled {    
+    background-color: rgb(49, 158, 144);
+    border: 1px solid rgb(22, 212, 187);
+    color: rgba(74, 72, 72, 0.496);
+}
+
+#text {
+    display: inline-flex;
+    width: auto;
+    margin: 7px auto;
+}
+
+#myForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0.5rem;
+    padding: 20px;
+    transition: 0.1s;
+}
+
+
+
+
+
